@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
-<body style="background-color: rgb(137, 196, 196);">
+<body>
     <header>
-        <h1 style="font-style: inherit;">Ojandu Ronny</h1>
+        <h1 style="font-style: inherit;">OJANDU RONNY</h1>
         <p>Personal Profile</p>
     </header>
     <main>
         <section>
-            <h2 style="color: blue; text-align: left;">About</h2>
+            <h2 id="about-heading">About</h2>
             <p style="text-align: justify;">
                 My name is Ojandu Ronny, a 19 year old Ugandan currently a studen of Muni University, persuing Bachelors
                 of Information Technology.
@@ -25,7 +27,7 @@
             </p>
         </section>
         <section>
-            <h2 style="color: green;">My Background</h2>
+            <h2 id="background-heading">My Background</h2>
             <p style="text-align: justify;">
                 I started the journey of Web development with the inroduction to basic HTML at Ocer Campion Jesuit
                 College - Gulu, wherei completed my Advanced Level of Study.
@@ -96,16 +98,54 @@
                     <img src="coding inportance.jpg" alt="Why coding is importand" width="200" height="200">
                     <figcaption>Why coding is importand</figcaption>
                 </figure>
+            </div>
         </section>
-        <nav>
-            <a href="Learn coding.jpg" open>LEARN CODING</a>
-            <a href="http://www.html.com">HTML</a>
-        </nav>
+
+        <section id="interests">
+            <h2 id="interests-heading">My Interests</h2>
+            <div class="grid-gallery">
+                <div class="gallery-card">
+                    <h3>Web Development</h3>
+                    <p>Building responsive, semantic pages with HTML, CSS and JavaScript.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Database Management</h3>
+                    <p>Designing and querying relational databases with MySQL and PostgreSQL.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Networking</h3>
+                    <p>Understanding how TCP/IP, DNS and HTTP/HTTPS move data across the web.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>UI / UX Design</h3>
+                    <p>Learning how good layout and spacing make interfaces easier to use.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Cloud Computing</h3>
+                    <p>Exploring how apps are hosted, scaled and deployed on the cloud.</p>
+                </div>
+                <div class="gallery-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Getting familiar with the basics of keeping web applications safe.</p>
+                </div>
+            </div>
+        </section><br>
+
+        <section class="site-navigation" aria-label="Page navigation">
+            <button type="button" id="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+                Menu ☰
+            </button>
+            <nav id="main-nav" class="nav-menu" aria-label="Main navigation">
+                <a href="Learn coding.jpg">LEARN CODING</a>
+                <a href="https://html.com/">HTML</a>
+                <a href="#interests">MY INTERESTS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </section>
     </main>
-    <section>
-        <form>
-            <navigation>
-                <h2 style="color: red;">Contact Details</h2>
+    <section id="contact">
+        <form id="contact-form">
+                <h2 id="contact-heading">Contact Details</h2>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br>
 
@@ -113,10 +153,10 @@
                 <input type="email" id="email" name="email" required><br><br>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" minlength="10" required></textarea><br>
+                <textarea id="message" name="message" minlength="10" required></textarea>
+                <p id="character-count" class="character-count" aria-live="polite">0 characters</p>
 
                 <input type="submit" value="Submit">
-            </navigation>
         </form>
     </section><br>
 
