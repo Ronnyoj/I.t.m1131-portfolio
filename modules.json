@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HTML and Semantic Page Structure",
+    "hours": 3
+  },
+  {
+    "name": "CSS Styling and Responsive Design",
+    "hours": 4
+  },
+  {
+    "name": "JavaScript and DOM Manipulation",
+    "hours": 5
+  },
+  {
+    "name": "AJAX and Fetch API",
+    "hours": 3
+  },
+  {
+    "name": "JSON Data",
+    "hours": 2
+  },
+  {
+    "name": "Introduction to JavaScript Frameworks",
+    "hours": 3
+  }
+]
