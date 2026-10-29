@@ -32,7 +32,7 @@ body {
   padding: 3rem 1.25rem;
   color: #fff;
   text-align: center;
-  background: Blue;
+  background: var(--color-primary-dark);
 }
 
 .header-content {
