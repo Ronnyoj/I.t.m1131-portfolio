@@ -15,6 +15,18 @@
       <h1>OJANDU RONNY</h1>
       <p class="header-subtitle">Information Technology Student | Aspiring Web Developer</p>
     </div>
+    <section class="panel" aria-label="Page navigation">
+      <button type="button" id="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+        Menu ☰
+      </button>
+      <nav id="main-nav" class="nav-menu" aria-label="Main navigation">
+        <a href="#about-heading">About</a>
+        <a href="https://html.com/" target="_blank" rel="noopener noreferrer">Learn HTML</a>
+        <a href="#interests">My Interests</a>
+        <a href="#course-modules">Course Modules</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </section>
   </header>
 
   <main class="container">
@@ -104,32 +116,13 @@
 
     <section class="panel" id="course-modules" aria-labelledby="modules-heading">
       <h2 id="modules-heading">Course Modules (Loaded from JSON)</h2>
-      <p class="section-intro">
-        This section uses JavaScript <code>fetch()</code> to load module information from
-        <code>modules.json</code> without reloading the whole page.
-      </p>
       <div id="modules-status" class="status-message" role="status" aria-live="polite">
         Loading course modules…
       </div>
       <ul id="modules-list" class="module-list"></ul>
     </section>
-
-    <section class="panel" aria-label="Page navigation">
-      <button type="button" id="menu-toggle" aria-controls="main-nav" aria-expanded="false">
-        Menu ☰
-      </button>
-      <nav id="main-nav" class="nav-menu" aria-label="Main navigation">
-        <a href="#about-heading">About</a>
-        <a href="https://html.com/" target="_blank" rel="noopener noreferrer">Learn HTML</a>
-        <a href="#interests">My Interests</a>
-        <a href="#course-modules">Course Modules</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </section>
-
     <section class="panel" id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact Details</h2>
-      <p class="section-intro">Use this form to practise form validation. It does not send a message to an email inbox yet.</p>
       <form id="contact-form">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" autocomplete="name" required>
